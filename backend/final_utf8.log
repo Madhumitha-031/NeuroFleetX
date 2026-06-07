@@ -1,0 +1,13 @@
+﻿java : Error: Unable to access jarfile 
+target/backend-0.0.1-SNAPSHOT.jar
+At line:1 char:1
++ java -jar target/backend-0.0.1-SNAPSHOT.jar > 
+backend_final.log 2>&1
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Error: Un 
+   able t....1-SNAPSHOT.jar:String) [], RemoteExcepti  
+  on
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+

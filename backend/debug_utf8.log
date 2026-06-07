@@ -1,0 +1,369 @@
+﻿
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.3)
+
+2026-02-13T18:20:53.593+05:30  INFO 1864 --- [NeuroFleetXBackend] [           main] c.n.backend.NeuroFleetXApplication       : Starting NeuroFleetXApplication v0.0.1-SNAPSHOT using Java 17.0.12 with PID 1864 (D:\NeuroFleetX\backend\target\backend-0.0.1-SNAPSHOT.jar started by ELCOT in D:\NeurofleetX\backend)
+2026-02-13T18:20:53.612+05:30  INFO 1864 --- [NeuroFleetXBackend] [           main] c.n.backend.NeuroFleetXApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-02-13T18:20:57.255+05:30  INFO 1864 --- [NeuroFleetXBackend] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-13T18:20:57.474+05:30  INFO 1864 --- [NeuroFleetXBackend] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 189 ms. Found 6 JPA repository interfaces.
+2026-02-13T18:21:00.504+05:30  INFO 1864 --- [NeuroFleetXBackend] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-13T18:21:00.533+05:30  INFO 1864 --- [NeuroFleetXBackend] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-13T18:21:00.534+05:30  INFO 1864 --- [NeuroFleetXBackend] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2026-02-13T18:21:00.695+05:30  INFO 1864 --- [NeuroFleetXBackend] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-13T18:21:00.699+05:30  INFO 1864 --- [NeuroFleetXBackend] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6827 ms
+2026-02-13T18:21:01.882+05:30  INFO 1864 --- [NeuroFleetXBackend] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-13T18:21:02.143+05:30  INFO 1864 --- [NeuroFleetXBackend] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-02-13T18:21:02.281+05:30  INFO 1864 --- [NeuroFleetXBackend] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-13T18:21:03.559+05:30  INFO 1864 --- [NeuroFleetXBackend] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-13T18:21:03.769+05:30  INFO 1864 --- [NeuroFleetXBackend] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-13T18:21:04.430+05:30  INFO 1864 --- [NeuroFleetXBackend] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4fd3b20a
+2026-02-13T18:21:04.434+05:30  INFO 1864 --- [NeuroFleetXBackend] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-13T18:21:04.647+05:30  WARN 1864 --- [NeuroFleetXBackend] [           main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-13T18:21:08.120+05:30  INFO 1864 --- [NeuroFleetXBackend] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-13T18:21:08.374+05:30  INFO 1864 --- [NeuroFleetXBackend] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-13T18:21:11.617+05:30  WARN 1864 --- [NeuroFleetXBackend] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-13T18:21:12.936+05:30  INFO 1864 --- [NeuroFleetXBackend] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2026-02-13T18:21:13.115+05:30  INFO 1864 --- [NeuroFleetXBackend] [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3b09582d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@29f72685, org.springframework.security.web.context.SecurityContextHolderFilter@bedebe9, org.springframework.security.web.header.HeaderWriterFilter@65d3e2ba, org.springframework.web.filter.CorsFilter@4f8488ef, org.springframework.web.filter.CorsFilter@27a8bfa1, org.springframework.security.web.authentication.logout.LogoutFilter@5444c63f, com.neurofleetx.backend.security.JwtFilter@6abca7a6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@759862a2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7b5e1b16, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@56114349, org.springframework.security.web.session.SessionManagementFilter@477dc93, org.springframework.security.web.access.ExceptionTranslationFilter@3299e315, org.springframework.security.web.access.intercept.AuthorizationFilter@6c65a7fc]
+2026-02-13T18:21:13.662+05:30  WARN 1864 --- [NeuroFleetXBackend] [           main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2026-02-13T18:21:14.225+05:30  INFO 1864 --- [NeuroFleetXBackend] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-02-13T18:21:14.250+05:30  INFO 1864 --- [NeuroFleetXBackend] [           main] c.n.backend.NeuroFleetXApplication       : Started NeuroFleetXApplication in 22.007 seconds (process running for 23.607)
+>>> DEBUG: DataSeeder starting...
+>>> DEBUG: Checking for existing admin...
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.approved,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.enabled,
+        u1_0.first_admin,
+        u1_0.full_name,
+        u1_0.password,
+        u1_0.role,
+        u1_0.specialization,
+        u1_0.verification_code 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+Hibernate: 
+    select
+        count(*) 
+    from
+        users u1_0
+2026-02-13T18:21:28.112+05:30  INFO 1864 --- [NeuroFleetXBackend] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-13T18:21:28.112+05:30  INFO 1864 --- [NeuroFleetXBackend] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-13T18:21:28.114+05:30  INFO 1864 --- [NeuroFleetXBackend] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-02-13T18:21:28.153+05:30 DEBUG 1864 --- [NeuroFleetXBackend] [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /api/notifications
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.approved,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.enabled,
+        u1_0.first_admin,
+        u1_0.full_name,
+        u1_0.password,
+        u1_0.role,
+        u1_0.specialization,
+        u1_0.verification_code 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-02-13T18:21:28.326+05:30 DEBUG 1864 --- [NeuroFleetXBackend] [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /api/notifications
+Hibernate: 
+    select
+        n1_0.id,
+        n1_0.created_at,
+        n1_0.is_read,
+        n1_0.message,
+        n1_0.recipient_email,
+        n1_0.title,
+        n1_0.type 
+    from
+        notifications n1_0 
+    where
+        n1_0.recipient_email=? 
+    order by
+        n1_0.created_at desc
+2026-02-13T18:22:28.974+05:30 DEBUG 1864 --- [NeuroFleetXBackend] [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /api/notifications
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.approved,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.enabled,
+        u1_0.first_admin,
+        u1_0.full_name,
+        u1_0.password,
+        u1_0.role,
+        u1_0.specialization,
+        u1_0.verification_code 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-02-13T18:22:29.000+05:30 DEBUG 1864 --- [NeuroFleetXBackend] [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /api/notifications
+Hibernate: 
+    select
+        n1_0.id,
+        n1_0.created_at,
+        n1_0.is_read,
+        n1_0.message,
+        n1_0.recipient_email,
+        n1_0.title,
+        n1_0.type 
+    from
+        notifications n1_0 
+    where
+        n1_0.recipient_email=? 
+    order by
+        n1_0.created_at desc
+2026-02-13T18:23:29.976+05:30 DEBUG 1864 --- [NeuroFleetXBackend] [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /api/notifications
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.approved,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.enabled,
+        u1_0.first_admin,
+        u1_0.full_name,
+        u1_0.password,
+        u1_0.role,
+        u1_0.specialization,
+        u1_0.verification_code 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-02-13T18:23:29.988+05:30 DEBUG 1864 --- [NeuroFleetXBackend] [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /api/notifications
+Hibernate: 
+    select
+        n1_0.id,
+        n1_0.created_at,
+        n1_0.is_read,
+        n1_0.message,
+        n1_0.recipient_email,
+        n1_0.title,
+        n1_0.type 
+    from
+        notifications n1_0 
+    where
+        n1_0.recipient_email=? 
+    order by
+        n1_0.created_at desc
+2026-02-13T18:23:57.259+05:30 DEBUG 1864 --- [NeuroFleetXBackend] [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /api/notifications
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.approved,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.enabled,
+        u1_0.first_admin,
+        u1_0.full_name,
+        u1_0.password,
+        u1_0.role,
+        u1_0.specialization,
+        u1_0.verification_code 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-02-13T18:23:57.356+05:30 DEBUG 1864 --- [NeuroFleetXBackend] [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /api/notifications
+Hibernate: 
+    select
+        n1_0.id,
+        n1_0.created_at,
+        n1_0.is_read,
+        n1_0.message,
+        n1_0.recipient_email,
+        n1_0.title,
+        n1_0.type 
+    from
+        notifications n1_0 
+    where
+        n1_0.recipient_email=? 
+    order by
+        n1_0.created_at desc
+2026-02-13T18:24:07.969+05:30 DEBUG 1864 --- [NeuroFleetXBackend] [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /api/notifications
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.approved,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.enabled,
+        u1_0.first_admin,
+        u1_0.full_name,
+        u1_0.password,
+        u1_0.role,
+        u1_0.specialization,
+        u1_0.verification_code 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-02-13T18:24:07.988+05:30 DEBUG 1864 --- [NeuroFleetXBackend] [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /api/notifications
+Hibernate: 
+    select
+        n1_0.id,
+        n1_0.created_at,
+        n1_0.is_read,
+        n1_0.message,
+        n1_0.recipient_email,
+        n1_0.title,
+        n1_0.type 
+    from
+        notifications n1_0 
+    where
+        n1_0.recipient_email=? 
+    order by
+        n1_0.created_at desc
+2026-02-13T18:24:22.972+05:30 DEBUG 1864 --- [NeuroFleetXBackend] [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /api/notifications
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.approved,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.enabled,
+        u1_0.first_admin,
+        u1_0.full_name,
+        u1_0.password,
+        u1_0.role,
+        u1_0.specialization,
+        u1_0.verification_code 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-02-13T18:24:22.988+05:30 DEBUG 1864 --- [NeuroFleetXBackend] [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /api/notifications
+Hibernate: 
+    select
+        n1_0.id,
+        n1_0.created_at,
+        n1_0.is_read,
+        n1_0.message,
+        n1_0.recipient_email,
+        n1_0.title,
+        n1_0.type 
+    from
+        notifications n1_0 
+    where
+        n1_0.recipient_email=? 
+    order by
+        n1_0.created_at desc
+2026-02-13T18:24:37.981+05:30 DEBUG 1864 --- [NeuroFleetXBackend] [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /api/notifications
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.approved,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.enabled,
+        u1_0.first_admin,
+        u1_0.full_name,
+        u1_0.password,
+        u1_0.role,
+        u1_0.specialization,
+        u1_0.verification_code 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-02-13T18:24:38.003+05:30 DEBUG 1864 --- [NeuroFleetXBackend] [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /api/notifications
+Hibernate: 
+    select
+        n1_0.id,
+        n1_0.created_at,
+        n1_0.is_read,
+        n1_0.message,
+        n1_0.recipient_email,
+        n1_0.title,
+        n1_0.type 
+    from
+        notifications n1_0 
+    where
+        n1_0.recipient_email=? 
+    order by
+        n1_0.created_at desc
+2026-02-13T18:24:52.971+05:30 DEBUG 1864 --- [NeuroFleetXBackend] [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/notifications
+2026-02-13T18:24:52.980+05:30 DEBUG 1864 --- [NeuroFleetXBackend] [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /api/notifications
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.approved,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.enabled,
+        u1_0.first_admin,
+        u1_0.full_name,
+        u1_0.password,
+        u1_0.role,
+        u1_0.specialization,
+        u1_0.verification_code 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-02-13T18:24:52.995+05:30 DEBUG 1864 --- [NeuroFleetXBackend] [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /api/notifications
+Hibernate: 
+    select
+        n1_0.id,
+        n1_0.created_at,
+        n1_0.is_read,
+        n1_0.message,
+        n1_0.recipient_email,
+        n1_0.title,
+        n1_0.type 
+    from
+        notifications n1_0 
+    where
+        n1_0.recipient_email=? 
+    order by
+        n1_0.created_at desc
+2026-02-13T18:25:32.978+05:30 DEBUG 1864 --- [NeuroFleetXBackend] [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /api/notifications
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.approved,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.enabled,
+        u1_0.first_admin,
+        u1_0.full_name,
+        u1_0.password,
+        u1_0.role,
+        u1_0.specialization,
+        u1_0.verification_code 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-02-13T18:25:33.000+05:30 DEBUG 1864 --- [NeuroFleetXBackend] [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /api/notifications
+Hibernate: 
+    select
+        n1_0.id,
+        n1_0.created_at,
+        n1_0.is_read,
+        n1_0.message,
+        n1_0.recipient_email,
+        n1_0.title,
+        n1_0.type 
+    from
+        notifications n1_0 
+    where
+        n1_0.recipient_email=? 
+    order by
+        n1_0.created_at desc
+
